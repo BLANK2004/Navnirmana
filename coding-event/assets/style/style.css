@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color:#f9fbf2;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, hsl(153, 77%, 46%), #307afa);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styling for the tabs */
+.nav-tabs .nav-link {
+  color: #333; /* Text color */
+  background-color: #f8f9fa; /* Background color */
+  border-color: #dee2e6; /* Border color */
+  margin: 12px;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff; /* Active tab text color */
+  background-color: #00bfff; /* Active tab background color */
+  border-color: #00bfff; /* Active tab border color */
+}
+
+/* Styling for the accordion */
+.accordion-item {
+  margin-bottom: 15px; /* Margin between accordion items */
+}
+
+.accordion-button {
+  background-color: #f8f9fa; /* Background color */
+  color: #333; /* Text color */
+}
+
+.accordion-button:hover {
+  background-color: #e9ecef; /* Hover background color */
+}
+
+.accordion-body {
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+  border: 1px solid #dee2e6; /* Border color */
+  border-top: none; /* Remove top border */
+  border-radius: 0 0 0.25rem 0.25rem; /* Rounded corners */
+}
+
+.card {
+  /* width: 500px; */
+  /* height: 80vh; */
+  perspective: 1000px;
+}
+
+.s1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.h-card {
+  border: 1px solid black;
+  margin: 0px 20px;
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 111111;
+}
+
+.h-card p{
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.fifth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 50px;
+}
+

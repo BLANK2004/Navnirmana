@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Round-Two</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img src="https://klebcahubli.in/wp-content/uploads/2022/07/logofinal-1.png" alt="" height="70">
+        </a>
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active fs-2 fw-bold text-dark fst-italic" aria-current="page" href="index.html">Navanirmāṇa</a>
+          </li>
+
+        </ul>
+      </header>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="container">
+      <div class="bg-light p-5 rounded mb-5">
+        <h2 class="text-center text-decoration-underline mb-4">ROUND ONE - Rules and Regulations</h2>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="fs-5">    
+              <li>You need to solve:
+                <ul>
+                  <li>3 Easy</li>
+                  <li>2 Medium</li>
+                  <li>1 Hard</li>
+                </ul>
+              </li>
+              <li>Pass all test cases for full marks</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul class="fs-5">
+              <li>Marks Allocated:
+                <ul>
+                  <li>Easy – 50</li>
+                  <li>Medium – 100</li>
+                  <li>Hard – 200</li>
+                </ul>
+              </li>
+              <li>Total Time: 40 minutes</li>
+            </ul>
+          </div>
+        </div>
+          
+
+       </div>
+    </section>
+
+
+    <section class="container">
+      <ul class="nav nav-tabs d-flex justify-content-center align-items-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active fs-5 fw-bold" id="home-tab" data-bs-toggle="tab"
+            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+            aria-selected="true">EASY</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 fw-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">MEDIUM</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link fs-5 fw-bold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">HARD</button>
+        </li>
+      </ul>
+
+      <!-- EASY PROBLEMS -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0">
+          <div class="container p-4">
+            <div class="accordion" id="accordionExample">
+
+              <!-- Easy problem 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    PROBLEM STATEMENT #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-1">
+                            <p class="card-text fs-20">Given 0-indexed string word and a character ch, reverse the segment of word that starts at index 0 and ends at 3(inclusive).If the character ch does not exist in the word do nothing.
+                              For Example -If word=”abcdef” and ch =”d”, then you should reverse the segment that starts at ‘0’ and ends at ‘3’(inclusive).
+                              The resulting string will be “dcbaefd”. Return the resultant string.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: word=”abcdefd” , ch =”d”
+                              </p>
+                            <p class="card-text">Expected Output: “dcbaefd”</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">•	Input: word=”xyxzxe” , ch =”z”</p>
+                            <p class="card-text">Output: “zxyxxe”</p>
+                        </div>
+                    </div>
+                
+                  </div>
+                </div>
+              </div>
+
+              <!-- Easy problem 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    PROBLEM STATEMENT #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-2">
+                            <p class="card-text fs-20">There is a strange printer with the following two special properties
+                              The printer can only print a sequence of the same character each time.
+                              At each term, the printer can print new characters starting from and ending at any place and will cover the original existing characters
+                              Given a string ‘s’ return the minimum number of turns the printer needed to print it.                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: s="aba"
+                              </p>
+                            <p class="card-text">Expected Output: 2</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: s="aaabbb"</p>
+                            <p class="card-text">Output: 2</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Easy problem 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    PROBLEM STATEMENT #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-3">
+                            <p class="card-text fs-20">You are given an integer array ‘nums’. Two players are playing a game with this array: player 1 and player 2.
+                              Player 1 and player 2 take turns, with player 1 starting first. Both players start the game with a score of 0. At each turn, the player takes one of the numbers from either end of the array (i.e., nums[0] or nums[nums.length - 1]) which reduces the size of the array by 1. The player adds the chosen number to their score. The game ends when there are no more elements in the array.
+                              Return true if Player 1 can win the game. If the scores of both players are equal, then player 1 is still the winner, and you should also return true. You may assume that both players are playing optimally.                        
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: nums = [1,5,2]
+                              </p>
+                            <p class="card-text">Expected Output: False</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: nums = [1,5,233,7]</p>
+                            <p class="card-text">Output: True</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Easy problem 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    PROBLEM STATEMENT #4
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-4">
+                            <p class="card-text fs-20">A school is trying to take an annual photo of all the students. The students are asked to stand in a single file line in non-decreasing order by height. Let this ordering be represented by the integer array expected where expected[i] is the expected height of the ith student in line.
+                              You are given an integer array heights representing the current order that the students are standing in. Each heights[i] is the height of the ith student in line (0-indexed).
+                              Return the number of indices where heights[i] != expected[i].
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: heights = [1,1,4,2,1,3]
+                              </p>
+                            <p class="card-text">Expected Output: 3</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: heights = [5,1,2,3,4]</p>
+                            <p class="card-text">Output: 5</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Easy problem 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    PROBLEM STATEMENT #5
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">Given an integer n, return true if it is a power of four. Otherwise, return false.
+                              An integer n is a power of four, if there exists an integer x such that n == 4x.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: n = 16
+                              </p>
+                            <p class="card-text">Expected Output: true</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: n = 5</p>
+                            <p class="card-text">Output: false</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MEDIUM PROBLEMS -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="container p-4">
+            <div class="accordion" id="accordionExample">
+
+              <!-- Medium problem 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    PROBLEM STATEMENT #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">You are given an array of ‘N’ linked lists. Each linked list is in ascending order. Merge all linked lists into one sorted linked list, such that it is in descending order and no two numbers are repeated. In place of repeated numbers print a string.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: lists = [[1,4,5],[1,3,4],[2,6]]
+                              </p>
+                            <p class="card-text">Expected Output: [6,5,4,’joy’,3,2,1,’joy’]</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: lists = [[6,7,8],[3,4],[2,8]]</p>
+                            <p class="card-text">Output: [8,’joy’,7,6,4,3,2]</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Medium problem 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    PROBLEM STATEMENT #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">:  You are given two 0-indexed arrays ‘nums1’ and ‘nums2’ and a 2D array ‘queries’ of ‘queries’. There are three types of queries:
+                              For a query of type 1, queries[i] = [1, l, r]. Flip the values from 0 to 1 and from 1 to 0 in ‘nums1’ from index ‘l’ to index ‘r’. Both ‘l’ and ‘r’ are 0-indexed.
+                              For a query of type 2, queries[i] = [2, p, 0]. For every index 0 <= i < n, set nums2[i] = nums2[i] + nums1[i] * p.
+                              For a query of type 3, queries[i] = [3, 0, 0]. Find the sum of the elements in ‘nums2’.
+                              Return an array containing all the answers to the third type queries
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: nums1 = [1,0,1], nums2 = [0,0,0], queries=[[1,1,1],[2,1,0],[3,0,0]]
+                              </p>
+                            <p class="card-text">Expected Output: [3]</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: nums1= [1], nums2= [5], queries= [2,0,0,3,0,0]</p>
+                            <p class="card-text">Output: : [5]</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Medium problem 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    PROBLEM STATEMENT #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">You are given a 0-indexed array of integers ‘nums’ of length ‘n’, and two positive integers ‘k’ and ‘dist’.
+                              The cost of an array is the value of its first element. For example, the cost of [1,2,3] is 1 while the cost of [3,4,1] is 3.
+                              You need to divide ‘nums’ into ‘k’ disjoint contiguous subarrays, such that the difference between the starting index of the second subarray and the starting index of the kth subarray should be less than or equal to dist. In other words, if you divide ‘nums’ into the subarrays 
+                              nums[0..(i1 - 1)], nums[i1..(i2 - 1)], ..., nums[ik-1..(n - 1)], 
+                              then ik-1 - i1 <= dist.
+                              Return the minimum possible sum of the cost of these subarrays.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: nums = [1,3,2,6,4,2], k = 3, dist = 3
+                              </p>
+                            <p class="card-text">Expected Output: 5</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: nums = [10,1,2,2,2,1], k = 4, dist = 3</p>
+                            <p class="card-text">Output: 15</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Medium problem 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    PROBLEM STATEMENT #4
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">: Given an integer array ‘nums’ of 2n integers, group these integers into n pairs (a1, b1), (a2, b2), ..., (an, bn) such that the sum of min(ai, bi) for all i is maximized. Return the maximized sum.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input:nums = [1,4,3,2]
+                              </p>
+                            <p class="card-text">Expected Output: 4</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: nums = [6,2,6,5,1,2]</p>
+                            <p class="card-text">Output: 9</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Medium problem 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    PROBLEM STATEMENT #5
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20"> You are given two strings ‘a’ and ‘b’ of the same length. Choose an index and split both strings at the same index, splitting ‘a’ into two strings: ‘aprefix’ and ‘asuffix’ where a = aprefix + asuffix, and splitting ‘b’ into two strings: ‘bprefix’ and ‘bsuffix’ where b = bprefix + bsuffix. Check if aprefix + bsuffix or bprefix + asuffix forms a palindrome.
+                              When you split a string ‘s’ into ‘sprefix’ and ‘ssuffix’, either ‘ssuffix’ or ‘sprefix’ is allowed to be empty. For example, if s = "abc", then "" + "abc", "a" + "bc", "ab" + "c" , and "abc" + "" are valid splits.
+                              Return true if it is possible to form a palindrome string, otherwise return false. Notice that x + y denotes the concatenation of strings x and y.
+                              
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input:a = "x", b = "y"
+                              </p>
+                            <p class="card-text">Expected Output: true</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: a = "xbdef", b = "xecab"</p>
+                            <p class="card-text">Output: false</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HARD PROBLEMS -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <div class="container p-4">
+            <div class="accordion" id="accordionExample">
+
+              <!-- Hard problem 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    PROBLEM STATEMENT #1
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">There is a car with capacity empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).
+                              You are given the integer capacity and an array trips where 
+                              trips[i] = [numPassengersi, fromi, toi] indicates that the ith trip has ‘numPassengersi’ passengers and the locations to pick them up and drop them off are fromi and toi respectively. The locations are given as the number of kilometers due east from the car's initial location.
+                              Return true if it is possible to pick up and drop off all passengers for all the given trips, or false otherwise.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: trips = [[2,1,5],[3,3,7]], capacity = 4
+                              </p>
+                            <p class="card-text">Expected Output: false</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: trips = [[2,1,5],[3,3,7]], capacity = 5</p>
+                            <p class="card-text">Output: true</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard problem 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    PROBLEM STATEMENT #2
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">n passengers board an airplane with exactly n seats. The first passenger has lost the ticket and picks a seat randomly. But after that, the rest of the passengers will:
+                              Take their own seat if it is still available, and
+                              Pick other seats randomly when they find their seat occupied
+                              Return the probability that the nth person gets his own seat.
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: n = 1
+                              </p>
+                            <p class="card-text">Expected Output: 1.00000</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: n = 2</p>
+                            <p class="card-text">Output: 0.50000</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard problem 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    PROBLEM STATEMENT #3
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20"><pre>A boolean expression is an expression that evaluates to either true or false. It can be in one of the following shapes:
+                              't' that evaluates to true.
+                              'f' that evaluates to false.
+                              '!(subExpr)' that evaluates to the logical NOT of the inner expression ‘subExpr’. '&(subExpr1, subExpr2, ..., subExprn)' that evaluates to the logical AND of the inner expressions subExpr1, subExpr2, ..., subExprn where n >= 1.
+                              '|(subExpr1, subExpr2, ..., subExprn)' that evaluates to the logical OR of the inner expressions subExpr1, subExpr2, ..., subExprn where n >= 1.
+                              Given a string expression that represents a boolean expression, return the evaluation of that expression.
+                              It is guaranteed that the given expression is valid and follows the given rules.
+                              </pre>
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input:expression = "&(|(f))"
+                              </p>
+                            <p class="card-text">Expected Output: false</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: expression = "|(f,f,f,t)"</p>
+                            <p class="card-text">Output: true</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard problem 4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    PROBLEM STATEMENT #4
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">
+                              <pre>A permutation of an array of integers is an arrangement of its members into a sequence or linear order.
+                              <span style="white-space: wrap;">  
+                                For example, for arr = [1,2,3], the following are all the permutations of arr: [1,2,3], [1,3,2], [2, 1, 3], [2, 3, 1], [3,1,2], [3,2,1].
+                                The next permutation of an array of integers is the next lexicographically greater permutation of its integer. More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, then the next permutation of that array is the permutation that follows it in the sorted container. If such arrangement is not possible, the array must be rearranged as the lowest possible order (i.e., sorted in ascending order).For example, the next permutation of arr = [1,2,3] is [1,3,2].
+                              </span>
+                                Similarly, the next permutation of arr = [2,3,1] is [3,1,2].
+                              While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not have a lexicographical larger rearrangement.
+                              Given an array of integers ‘nums’, find the next permutation of ‘nums’.
+                              The replacement must be in place and use only constant extra memory.
+                              </pre>
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: nums = [1,2,3]
+                              </p>
+                            <p class="card-text">Expected Output:  [1,3,2]</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: nums = [3,2,1]</p>
+                            <p class="card-text">Output: [1,2,3]3</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hard problem 5 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    PROBLEM STATEMENT #5
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <h2 class="text-center mb-8"></h2>
+                    <div class="card mb-4 fw-bolder">
+                        <div class="card-body text-white" style="background-color: #3BB2F1;"id="hell-5">
+                            <p class="card-text fs-20">You are given a 0-indexed array of integers nums of length n. You are initially positioned at nums[0]. 
+                              Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at nums[i], you can jump to any nums[i + j] where: 
+                              0 <= j <= nums[i] and 
+                              i + j < n 
+                              Return the minimum number of jumps to reach nums[n - 1]. 
+                              The test cases are generated such that you can reach nums[n - 1].
+                              
+                              
+                              </p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case One:</h5>
+                            <p class="card-text">Input: nums = [2,3,1,1,4] 
+                              </p>
+                            <p class="card-text">Expected Output: 2</p>
+                        </div>
+                    </div>
+                
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Case Two:</h5>
+                            <p class="card-text">Input: nums = [2,3,0,1,4]</p>
+                            <p class="card-text">Output: 2</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <section>
+      <div class="mt-4" style="background-color: white;">
+        <footer class="bg-light text-center border-top text-lg-start p-3">
+          <div class="text-center rwt-txt-dark-blue ">
+            © 2024, Designed and Developed by
+            <a href="https://www.linkedin.com/in/harshith-bhosale-77632024b/" target="blank"
+              class="foot-link text-decoration-none fw-bold">
+              Harshith Bhosale</a>
+          </div>
+        </footer>
+
+
+      </div>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
